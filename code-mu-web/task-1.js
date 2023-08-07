@@ -1,21 +1,29 @@
-// Дано число. Проверьте, отрицательное оно или нет. Выведите об этом информацию в консоль.
+//  Дано число. Перевірте, чи негативне воно чи ні. Виведіть інформацію про число в консоль. 
+
 
 function checkNumber(number) {
 
     if (number > 0) {
-        consale.log("The number is positive number!");
+        console.log("The number is positive number!");
     } else {
         if (number < 0) {
-            consale.log("The number is negative number!");
+            console.log("The number is negative number!");
         } else {
-            consale.log("The number is zero!");
+            switch (number) {
+                case 0:
+                    console.log("The number is zero!");
+                    break;
+
+                default:
+                    console.log("The value you entered is not a number.");
+            }
         }
     }
-
-    return result;
-
 }
 
 checkNumber(10);
 checkNumber(-2);
 checkNumber(0);
+checkNumber(name);
+checkNumber(1.25);
+checkNumber(-0.2);
