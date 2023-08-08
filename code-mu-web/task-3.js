@@ -7,12 +7,10 @@
 function calculeteString(message) {
     
     let last = message.length-1;
-    console.log(message);
-    console.log(message[last]);
+    console.log(message, message[last]);
 
     return last;
 }
-
 
 calculeteString("You can do everything."); // .
 calculeteString("I believe in you");  // u
