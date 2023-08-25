@@ -18,18 +18,68 @@
 
 </script>
     <!-- Task - 1 -->
-    <!-- <script>
-    alert("Я JavaScript!");
-    </script> -->
+    <script>
+ const atTheOldToad = {
+        potions: [
+            { name: "Speed potion", price: 460 },
+            { name: "Dragon breath", price: 780 },
+            { name: "Stone skin", price: 520 },
+        ],
+        // Change code below this line
+       
+  
+  getPotions() {
+    
+            return this.potions;
+        },
+        addPotion(newPotion) {
+            for (const potion of potions) {
+                if (this.potions.includes(newPotion)) {
+
+                    return `Error! Potion ${newPotion} is already in your inventory!`;
+                }
+
+                this.potions.push(newPotion);
+                
+            }
+        },
+
+        removePotion(potionName) {
+            const potionIndex = this.potions.indexOf(potionName);
+
+            if (potionIndex === -1) {
+                return `Potion ${potionName} is not in inventory!`;
+            }
+
+            this.potions.splice(potionIndex, 1);
+        },
+        updatePotionName(oldName, newName) {
+            const potionIndex = this.potions.indexOf(oldName);
+
+            if (potionIndex === -1) {
+                return `Potion ${oldName} is not in inventory!`;
+            }
+
+            this.potions.splice(potionIndex, 1, newName);
+        },
+
+        // Change code above this line
+    };
+
+    </script>
 
     <!-- <script type="module" src="./js-book/Task-2.js"></script> -->
     <!-- <script type="module" src="./Module-1/36-span-sale.js"></script> -->
     <!-- <script type="module" src="./code-mu-web/task-1.js"></script> -->
     <!-- <script type="module" src="./code-mu-web/task-2.js"></script> -->
     <!-- <script type="module" src="./code-mu-web/task-3.js"></script> -->
+<<<<<<< Updated upstream
     <!-- <script type="module" src="./Module-1/9.js"></script> -->
     <!-- <script type="module" src="./Module-1/22-min-to-max.js"></script> -->
     <!-- <script src="./Module-1/21.js"></script> -->
     <script type="module" src=""></script>
+=======
+    <!-- <script src="./Module-1/21.js"></script> -->
+>>>>>>> Stashed changes
 </body>
 </html>
